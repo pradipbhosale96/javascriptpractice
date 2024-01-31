@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Oswald", sans-serif;
+}
+.background {
+  background-image: url(images/mountain.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container h1 {
+  font-size: 4rem;
+  background-color: aliceblue;
+}
+.settings {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.settings.fa fa-cog{
+  font-size: 10rem;
+  color: rgb(149, 30, 30);
+}
+.settings.content {
+  display: flex;
+  gap: 10rem;
+}
+.settings.content input {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+}
+.settings.content dbbutton {
+  padding: 0.5rem 1rem;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+}
