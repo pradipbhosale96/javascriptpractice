@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const addBtn = document.getElementById("addBtn");
     const todoList = document.getElementById("todoList");
     let editTodo = null;
-//function to add to do....
+    //function to add to do....
     const addTodo = () => {
         const inputText = inputBox.value.trim();
         if (inputText.length <= 0) {
@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             todoList.appendChild(li);
             inputBox.value = "";
+
+            saveLocalTodos(inputText);
         }
 
     }
@@ -60,6 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
+    // localStorage.setItem("todos",JSON.stringify(todos)); 
+    const saveLocalTodos =(todo) =>{
+    let todos = [];
+    todos.push(todo);
+    console.log(todos);
+    }
     addBtn.addEventListener('click', addTodo);
     todoList.addEventListener('click', updateTodo);
 });
