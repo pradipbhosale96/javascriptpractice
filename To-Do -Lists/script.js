@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    // localStorage.setItem("todos",JSON.stringify(todos)); 
     const saveLocalTodos =(todo) =>{
     let todos = [];
     todos.push(todo);
