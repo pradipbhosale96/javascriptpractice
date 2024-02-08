@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             todoList.appendChild(li);
             inputBox.value = "";
 
-            saveLocalTodos(inputText);
+            // saveLocalTodos(inputText);
         }
 
     }
