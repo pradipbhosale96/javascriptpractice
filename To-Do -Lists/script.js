@@ -62,11 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    const saveLocalTodos =(todo) =>{
-    let todos = [];
-    todos.push(todo);
-    console.log(todos);
-    }
+    // const saveLocalTodos =(todo) =>{
+    // let todos = [];
+    // todos.push(todo);
+    // console.log(todos);
+    // }
     addBtn.addEventListener('click', addTodo);
     todoList.addEventListener('click', updateTodo);
 });
