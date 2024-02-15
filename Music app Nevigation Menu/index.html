@@ -10,12 +10,12 @@
       src="https://kit.fontawesome.com/7a4b62b0a4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="container">
-        <div class="logo">MyTunes</div>
-
+        <div class="logo">myTunes</div>
         <ul>
           <a href="#hero">
             <li>Overview</li>
@@ -30,7 +30,31 @@
             <li>Gift Cards</li>
           </a>
         </ul>
+
+        <div class="menu_bar" id="menuBar">
+          <i class="fa fa-bars"></i>
+        </div>
       </nav>
+
+      <div class="menu_mobile">
+        <div class="close_btn_container">
+          <button onclick="onClose()">Close</button>
+        </div>
+        <ul>
+          <a href="#hero" onclick="onClose()">
+            <li>Overview</li>
+          </a>
+          <a href="#music" onclick="onClose()">
+            <li>Music</li>
+          </a>
+          <a href="#video" onclick="onClose()">
+            <li>Video</li>
+          </a>
+          <a href="#gift" onclick="onClose()">
+            <li>Gift Cards</li>
+          </a>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="hero-section" id="hero">
@@ -60,7 +84,7 @@
           <button class="primary-btn">Start Your Trail Now</button>
 
           <p>
-            Orange Music is available in MyTunes, and for iOS and Android
+            Orange Music is available in myTunes, and for iOS and Android
             devices.
           </p>
           <div class="ipad-iphone-img">
@@ -76,7 +100,7 @@
           you’ll be able to enjoy a tremendous selection of your favorite
           content in 4K HDR. So get ready to enjoy episodes of your favorite TV
           shows or hit movies you’ve been waiting to see — anytime, anywhere.
-          Just tap to play,even download if you’re going somewhere you won’t
+          Just tap to play, or even download if you’re going somewhere you won’t
           have Wi-Fi.
         </p>
         <button class="secondary-btn">Read more</button>
@@ -167,7 +191,7 @@
         </div>
       </section>
       <section class="footer-lower">
-        <p>Copyright © 2024 Developed by PRADIP</p>
+        <p>Copyright © 2022 Do Some Coding</p>
       </section>
     </footer>
   </body>
